@@ -1,295 +1,173 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RQ Adventurers’ Inn ― RQ冒険者の宿</title>
-
-<style>
-
-body{
-  margin:0;
-  padding:0;
-  background:#f6efe6;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Hiragino Sans",
-    "Yu Gothic",
-    Meiryo,
-    sans-serif;
-  line-height:1.8;
-  color:#2a1e14;
-}
-
-.container{
-  max-width:900px;
-  margin:auto;
-  padding:40px 20px;
-}
-
-.hero{
-  display:flex;
-  align-items:center;
-  gap:30px;
-  background:white;
-  border-radius:16px;
-  padding:25px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
-
-.logo{
-  width:220px;
-  height:auto;
-}
-
-.hero-text h1{
-  margin:0 0 15px 0;
-  font-size:26px;
-  color:#4b2c13;
-}
-
-.section{
-  margin-top:30px;
-  background:white;
-  border-radius:14px;
-  padding:20px 25px;
-  box-shadow:0 3px 12px rgba(0,0,0,0.06);
-}
-
-.section h2{
-  margin-top:0;
-  color:#6a3c17;
-}
-
-ul{
-  list-style:none;
-  padding:0;
-}
-
-li{
-  margin-bottom:15px;
-}
-
-a{
-  color:#0b65c2;
-  text-decoration:none;
-}
-
-a:hover{
-  text-decoration:underline;
-}
-
-.footer{
-  margin-top:40px;
-  text-align:center;
-  color:#6a6156;
-}
-
-@media (max-width:700px){
-
-.hero{
-  flex-direction:column;
-  text-align:center;
-}
-
-.logo{
-  width:180px;
-}
-
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="google32adbeb6748f4a9b">
+  <title>RQ Adventurers' Inn | RuneQuest 非公式ファンクラブ</title>
+  <meta
+    name="description"
+    content="RuneQuest 非公式ファンクラブ RQ Adventurers' Inn のトップページ。アプリ、プレイエイド、関連アカウントへの入口をまとめています。"
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
 </head>
-
-
 <body>
+  <div class="page-shell">
+    <header class="hero">
+      <img class="hero__image" src="images/header.jpg" alt="RuneQuest Adventurers' Inn ヘッダー画像">
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <img class="hero__logo" src="images/rq-inn-logo.png" alt="RQ Adventurers' Inn ロゴ">
+        <div class="hero__copy">
+          <p class="eyebrow">RuneQuest Fan Club</p>
+          <h1>RQ Adventurers' Inn</h1>
+          <p class="hero__lead">ようこそ！ RuneQuest 非公式ファンクラブ 「RQ Adventurers' Inn ― RQ冒険者の宿へ。」</p>
+          <p class="hero__text">
+            ここは RuneQuestファン もぶ（Mobu）が運営するサイトです。
+            「もっと便利に、もっと楽しく、みんなで遊ぶ」をテーマに、さまざまな試みで RuneQuest を盛り上げていきます。
+          </p>
+          <p class="hero__text">どうぞ、笑いと愛でゆる～くお付き合いください。それでは、ごゆっくり… ☕</p>
+          <div class="hero__actions">
+            <a href="#applications" class="button button--primary">アプリを見る</a>
+            <a href="#accounts" class="button button--secondary">関連リンクへ</a>
+          </div>
+        </div>
+      </div>
+    </header>
 
-<div class="container">
+    <main class="content">
+      <section class="intro-card section-fade">
+        <p>
+          RuneQuest を遊ぶ時間が少しでも楽しく、少しでも便利になるように。
+          このページでは、配布中のツール、プレイに役立つ資料、発信中の各種アカウントをまとめています。
+        </p>
+      </section>
 
+      <section id="applications" class="section section-fade">
+        <div class="section__heading">
+          <p class="section__label">Applications</p>
+          <h2>アプリ</h2>
+        </div>
+        <div class="feature-list">
+          <div class="feature-card">
+            <div class="feature-card__icon-wrap">
+              <img src="images/pdf_tools_icon-512.png" alt="PDFつーる アイコン" class="feature-card__icon">
+            </div>
+            <div class="feature-card__body">
+              <h3>PDFつーる</h3>
+              <p>ルーンクエストのためのPDFお役立ちツールです。ルールブックの印刷や お手軽翻訳を、少し気軽にするためのアプリをまとめていきます。</p>
+            </div>
+          </div>
+          <a class="feature-card feature-card--link" href="https://rq-inn.com/png-maker/" target="_blank" rel="noreferrer">
+            <div class="feature-card__icon-wrap">
+              <img src="images/png-maker-icon-512.png" alt="透過PNGメーカー アイコン" class="feature-card__icon">
+            </div>
+            <div class="feature-card__body">
+              <p class="link-panel__tag">PNG Maker</p>
+              <h3>透過PNGメーカー</h3>
+              <p>AI生成画像などの切り出しツールです。オンセの準備などに役立てて下さい。</p>
+            </div>
+            <span class="feature-card__arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
 
-<div class="hero">
+      <section class="section section-fade">
+        <div class="section__heading">
+          <p class="section__label">Play Aid</p>
+          <h2>プレイエイド</h2>
+        </div>
+        <a
+          class="link-panel"
+          href="https://www.drivethrurpg.com/ja/product/557305/japanese?src=hottest_filtered"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img class="link-panel__image" src="images/calendar.png" alt="グローランサ カレンダー 日本語版の表紙">
+          <div>
+            <p class="link-panel__tag">Calendar</p>
+            <h3>グローランサ カレンダー（日本語版）</h3>
+            <p>RuneQuest の 21カルトの聖日が分かる　6季カレンダー 日本語版 へのリンクです。</p>
+          </div>
+          <span class="link-panel__arrow" aria-hidden="true">↗</span>
+        </a>
+      </section>
 
-<img src="rq-inn-logo.png" class="logo">
+      <section id="accounts" class="section section-fade">
+        <div class="section__heading">
+          <p class="section__label">Related Accounts</p>
+          <h2>関連アカウント</h2>
+        </div>
+        <div class="account-grid">
+          <a class="account-card" href="https://note.com/mofumofu1011" target="_blank" rel="noreferrer">
+            <span class="account-card__emoji">🪶</span>
+            <h3>note</h3>
+            <p>ブログと読み物</p>
+          </a>
+          <a class="account-card" href="https://x.com/RQ_Inn_Official" target="_blank" rel="noreferrer">
+            <span class="account-card__emoji">😁</span>
+            <h3>X メイン</h3>
+            <p>最新のお知らせ</p>
+          </a>
+          <a class="account-card" href="https://x.com/RQ_Inn_Intl" target="_blank" rel="noreferrer">
+            <span class="account-card__emoji">🌎</span>
+            <h3>X 海外</h3>
+            <p>英語圏向けの発信</p>
+          </a>
+          <a class="account-card" href="https://x.com/RQ_Inn_GrChina" target="_blank" rel="noreferrer">
+            <span class="account-card__emoji">🐉</span>
+            <h3>X 中国語圏</h3>
+            <p>中国語圏向けの発信</p>
+          </a>
+          <a class="account-card" href="https://x.com/mofumofu1011" target="_blank" rel="noreferrer">
+            <span class="account-card__emoji">☕</span>
+            <h3>X 個人</h3>
+            <p>もぶ個人アカウント</p>
+          </a>
+          <a class="account-card" href="https://www.facebook.com/mobu.rq.adventurers.inn/" target="_blank" rel="noreferrer">
+            <span class="account-card__emoji">🎩</span>
+            <h3>Facebook</h3>
+            <p>コミュニティの記録</p>
+          </a>
+          <a class="account-card" href="https://www.youtube.com/channel/UCVH7YpSoC4GMN1ayZ3m5yZA" target="_blank" rel="noreferrer">
+            <span class="account-card__emoji">📺</span>
+            <h3>YouTube</h3>
+            <p>動画コンテンツ</p>
+          </a>
+          <a class="account-card" href="https://www.tiktok.com/@rq_adventurers_inn" target="_blank" rel="noreferrer">
+            <span class="account-card__emoji">🕺</span>
+            <h3>TikTok</h3>
+            <p>ショート動画</p>
+          </a>
+          <a class="account-card" href="https://www.instagram.com/rq_adventurers_inn" target="_blank" rel="noreferrer">
+            <span class="account-card__emoji">📷</span>
+            <h3>Instagram</h3>
+            <p>ビジュアル更新</p>
+          </a>
+        </div>
+      </section>
+    </main>
 
-<div class="hero-text">
+    <footer class="footer section-fade">
+      <div class="footer__copy">
+        <p class="section__label">Adventurers' Desk</p>
+        <h2>ゆっくり見ていってください</h2>
+        <p>スマートフォンからもアクセスしやすいように、トップページをシンプルに整理しています。</p>
+        <p class="footer__small">© <span id="current-year"></span> RQ Adventurers' Inn</p>
+      </div>
+      <div class="footer__qr">
+        <img src="images/rq-inn-com-qr.png" alt="RQ Adventurers' Inn サイトQRコード">
+        <p>QR からもアクセスできます。</p>
+      </div>
+    </footer>
+  </div>
 
-<h1>
-ようこそ！<br>
-RuneQuest 非公式ファンクラブ<br>
-RQ Adventurers’ Inn ― RQ冒険者の宿へ。
-</h1>
-
-<p>
-ここは RuneQuestファン もぶ（Mobu）が運営するサイトです。
-</p>
-
-<p>
-「もっと便利に、もっと楽しく、みんなで遊ぶ」をテーマに、
-さまざまな試みで RuneQuest を盛り上げていきます。
-</p>
-
-<p>
-どうぞ、笑いと愛でゆる～くお付き合いください。<br>
-それでは、ごゆっくり… ☕
-</p>
-
-</div>
-</div>
-
-
-
-<div class="section">
-
-<h2>🛠 アプリ ― Applications</h2>
-
-<ul>
-
-<li>
-🏪 PDFコンビニUSB<br>
-<a href="https://rq-inn.github.io/pdf-conveni-usb/" target="_blank">
-https://rq-inn.com/pdf-conveni-usb/
-</a>
-</li>
-
-<li>
-✌️ PDFちょき<br>
-<a href="https://rq-inn.github.io/pdf-choki/" target="_blank">
-https://rq-inn.com/pdf-choki/
-</a>
-</li>
-
-<li>
-✊ PDFぐうう<br>
-<a href="https://rq-inn.github.io/pdf-guuu/" target="_blank">
-https://rq-inn.com/pdf-guuu/
-</a>
-</li>
-
-<li>
-🖐️ PDFぱっか<br>
-<a href="https://rq-inn.github.io/pdf-pakkan/" target="_blank">
-https://rq-inn.com/pdf-pakkan/
-</a>
-</li>
-
-</ul>
-
-</div>
-
-
-
-<div class="section">
-
-<h2>🎲 プレイエイド ― Play Aid</h2>
-
-<ul>
-
-<li>
-📆 グローランサ カレンダー（日本語版）<br>
-<a href="https://www.drivethrurpg.com/ja/product/557305/japanese?src=hottest_filtered" target="_blank">
-DriveThruRPG
-</a>
-</li>
-
-</ul>
-
-</div>
-
-
-
-<div class="section">
-
-<h2>🌍 関連アカウント ― Related Accounts</h2>
-
-<ul>
-
-<li>
-🪶 note（ブログ）<br>
-<a href="https://note.com/mofumofu1011" target="_blank">
-https://note.com/mofumofu1011
-</a>
-</li>
-
-<li>
-😁 X メイン<br>
-<a href="https://x.com/RQ_Inn_Official" target="_blank">
-https://x.com/RQ_Inn_Official
-</a>
-</li>
-
-<li>
-🌎 X 海外（英語圏）<br>
-<a href="https://x.com/RQ_Inn_Intl" target="_blank">
-https://x.com/RQ_Inn_Intl
-</a>
-</li>
-
-<li>
-🐉 X 海外（中国語圏）<br>
-<a href="https://x.com/RQ_Inn_GrChina" target="_blank">
-https://x.com/RQ_Inn_GrChina
-</a>
-</li>
-
-<li>
-☕ X 個人（もぶ）<br>
-<a href="https://x.com/mofumofu1011" target="_blank">
-https://x.com/mofumofu1011
-</a>
-</li>
-
-<li>
-🎩 Facebook<br>
-<a href="https://www.facebook.com/mobu.rq.adventurers.inn/" target="_blank">
-Facebook
-</a>
-</li>
-
-<li>
-🎲 Discord<br>
-<a href="https://discord.gg/dQ7mccGH" target="_blank">
-Discord
-</a>
-</li>
-
-<li>
-📺 YouTube<br>
-<a href="https://www.youtube.com/channel/UCVH7YpSoC4GMN1ayZ3m5yZA" target="_blank">
-YouTube
-</a>
-</li>
-
-<li>
-🕺 TikTok<br>
-<a href="https://www.tiktok.com/@rq_adventurers_inn" target="_blank">
-TikTok
-</a>
-</li>
-
-<li>
-📷 Instagram<br>
-<a href="https://www.instagram.com/rq_adventurers_inn" target="_blank">
-Instagram
-</a>
-</li>
-
-</ul>
-
-</div>
-
-
-
-<div class="footer">
-
-<p>
-RQ Adventurers’ Inn ☕ RuneQuest fan community by Mobu
-</p>
-
-</div>
-
-</div>
-
+  <script src="main.js"></script>
 </body>
 </html>
