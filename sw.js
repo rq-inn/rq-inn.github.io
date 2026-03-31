@@ -15,6 +15,8 @@ const ASSETS_TO_CACHE = [
   "./images/rq-inn-com-qr.png",
   "./images/icon-192.png",
   "./images/icon-512.png",
+  "./images/favicon-32.png",
+  "./images/favicon-16.png",
   "./images/apple-touch-icon.png"
 ];
 
