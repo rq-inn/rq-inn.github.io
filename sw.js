@@ -10,6 +10,7 @@ const ASSETS_TO_CACHE = [
   "./images/rq-inn-logo.png",
   "./images/pdf_tools_icon-512.png",
   "./images/png-maker-icon-512.png",
+  "./images/gemix_icon-512.png",
   "./images/calendar.png",
   "./images/rq-inn-com-qr.png",
   "./images/icon-192.png",
