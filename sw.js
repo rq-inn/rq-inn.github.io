@@ -1,4 +1,4 @@
-const CACHE_NAME = "rq-inn-shell-v1";
+const CACHE_NAME = "rq-inn-shell-v6";
 const OFFLINE_URL = "./index.html";
 const ASSETS_TO_CACHE = [
   "./",
@@ -6,18 +6,22 @@ const ASSETS_TO_CACHE = [
   "./styles.css",
   "./main.js",
   "./site.webmanifest",
-  "./images/header.jpg",
-  "./images/rq-inn-logo.png",
-  "./images/pdf_tools_icon-512.png",
-  "./images/png-maker-icon-512.png",
-  "./images/gemix_icon-512.png",
-  "./images/calendar.png",
-  "./images/rq-inn-com-qr.png",
-  "./images/icon-192.png",
-  "./images/icon-512.png",
-  "./images/favicon-32.png",
-  "./images/favicon-16.png",
-  "./images/apple-touch-icon.png"
+  "./font/GloranthaCoreRunes1.5.woff2",
+  "./images/header/S__56590338.jpg",
+  "./images/header/S__56590340_0.jpg",
+  "./images/header/S__56590341_0.jpg",
+  "./images/header/S__56590342_0.jpg",
+  "./images/branding/rq-inn-logo.png",
+  "./images/apps/pdf_tools_icon-512.png",
+  "./images/apps/png-maker-icon-512.png",
+  "./images/apps/MD-icon-512.png",
+  "./images/play-aids/calendar.png",
+  "./images/branding/rq-inn-com-qr.png",
+  "./images/pwa/icon-192.png",
+  "./images/pwa/icon-512.png",
+  "./images/pwa/favicon-32.png",
+  "./images/pwa/favicon-16.png",
+  "./images/pwa/apple-touch-icon.png"
 ];
 
 self.addEventListener("install", (event) => {
