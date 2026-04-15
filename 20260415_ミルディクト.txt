@@ -1,0 +1,3 @@
+ミルディクト…原書と日本語訳の２つのPDFを並べてサクサク辞書を作れるツールです
+
+[MD-icon-512.png]https://rq-inn.com/mirr-dict/

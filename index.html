@@ -42,13 +42,15 @@
             <span class="rune-slot__reel" data-slot-reel>?</span>
           </span>
         </button>
-        <div class="language-switcher">
-          <label class="language-switcher__label" for="language-select" data-i18n="languageLabel">Language</label>
-          <select id="language-select" class="language-switcher__select" aria-label="Language selector">
-            <option value="ja">日本語</option>
-            <option value="zh-Hant">繁體中文</option>
-            <option value="en">English</option>
-          </select>
+        <div id="language-switcher-host-top" class="language-switcher-host">
+          <div id="language-switcher" class="language-switcher">
+            <label class="language-switcher__label" for="language-select" data-i18n="languageLabel">Language</label>
+            <select id="language-select" class="language-switcher__select" aria-label="Language selector">
+              <option value="ja">日本語</option>
+              <option value="zh-Hant">繁體中文</option>
+              <option value="en">English</option>
+            </select>
+          </div>
         </div>
       </div>
       <div class="hero__content">
@@ -207,6 +209,7 @@
         <img src="images/branding/rq-inn-com-qr.png" alt="RQ Adventurers' Inn サイトQRコード" data-i18n-attr="alt:qrAlt">
         <p data-i18n="qrText">QR からもアクセスできます。</p>
       </div>
+      <div id="language-switcher-host-footer" class="language-switcher-host language-switcher-host--footer"></div>
     </footer>
   </div>
 
