@@ -1,8 +1,5 @@
 const yearNode = document.getElementById("current-year");
 const languageSelect = document.getElementById("language-select");
-const languageSwitcherNode = document.getElementById("language-switcher");
-const languageSwitcherTopHost = document.getElementById("language-switcher-host-top");
-const languageSwitcherFooterHost = document.getElementById("language-switcher-host-footer");
 const pageTitleNode = document.getElementById("page-title");
 const metaDescriptionNode = document.getElementById("meta-description");
 const runeSlotNode = document.getElementById("rune-slot");
@@ -236,19 +233,9 @@ function isSmartphoneLayout() {
 }
 
 function applyDeviceLayout() {
-  if (!languageSwitcherNode || !languageSwitcherTopHost || !languageSwitcherFooterHost) {
-    return;
-  }
-
   const smartphoneLayout = isSmartphoneLayout();
   htmlNode.classList.toggle("is-sp-layout", smartphoneLayout);
   htmlNode.classList.toggle("is-pc-layout", !smartphoneLayout);
-
-  const targetHost = smartphoneLayout ? languageSwitcherFooterHost : languageSwitcherTopHost;
-
-  if (languageSwitcherNode.parentElement !== targetHost) {
-    targetHost.appendChild(languageSwitcherNode);
-  }
 }
 
 function getTokyoDateParts(date = new Date()) {
