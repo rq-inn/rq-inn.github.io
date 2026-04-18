@@ -878,7 +878,7 @@ a {
 @media (max-width: 640px) {
   .page-shell {
     width: min(100% - 20px, 100%);
-    margin: 10px auto 24px;
+    margin: 8px auto 20px;
   }
 
   .topbar {
@@ -890,6 +890,7 @@ a {
     left: 14px;
     right: 14px;
     top: 14px;
+    gap: 10px;
   }
 
   .rune-slot {
@@ -910,6 +911,7 @@ a {
     width: 100%;
     justify-content: space-between;
     padding: 10px 12px;
+    background: rgba(7, 18, 34, 0.82);
   }
 
   .language-switcher__select {
@@ -920,10 +922,6 @@ a {
 
   .is-sp-layout .topbar--hero {
     justify-content: center;
-  }
-
-  .is-sp-layout .language-switcher-host {
-    display: none;
   }
 
   .hero,
@@ -939,23 +937,77 @@ a {
   .footer,
   .intro-card,
   .promo-band {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .hero__content {
     gap: 28px;
-    padding-top: 138px;
-    padding-bottom: 26px;
+    padding-top: 166px;
+    padding-bottom: 20px;
   }
 
   .hero__icon-orbit {
-    width: min(100%, 260px);
+    width: min(100%, 220px);
+  }
+
+  .hero__signal {
+    width: 100%;
+    padding: 16px 18px;
+    text-align: center;
+  }
+
+  .hero__copy--promo {
+    text-align: center;
+  }
+
+  .hero__tagline,
+  .hero__text {
+    max-width: none;
+  }
+
+  .hero__actions {
+    gap: 10px;
+  }
+
+  .button {
+    width: 100%;
+    min-height: 52px;
+  }
+
+  .hero__links,
+  .howto-links {
+    gap: 12px;
+  }
+
+  .hero__links a,
+  .howto-links a {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 16px;
+    background: rgba(143, 224, 255, 0.08);
+    border: 1px solid rgba(143, 224, 255, 0.16);
+    text-align: center;
   }
 
   .hero__video-wrap {
     margin: 0 16px 16px;
-    padding: 20px;
+    padding: 18px 16px;
+    gap: 16px;
+  }
+
+  .hero__video-copy {
+    text-align: center;
+  }
+
+  .section__heading {
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .section__heading--stack {
+    justify-items: center;
+    text-align: center;
   }
 
   .hero h1 {
@@ -969,10 +1021,103 @@ a {
   .promo-grid,
   .promo-grid--usecases {
     grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .steps {
     gap: 16px;
+  }
+
+  .promo-card,
+  .step,
+  .feature-card,
+  .link-panel,
+  .account-card {
+    padding: 18px 16px;
+    border-radius: 20px;
+  }
+
+  .promo-card--story {
+    min-height: 0;
+  }
+
+  .feature-card__icon-wrap {
+    width: 92px;
+  }
+
+  .feature-card__icon {
+    width: 58px;
+    height: 58px;
+  }
+
+  .link-panel__image {
+    width: min(100%, 150px);
+  }
+
+  .account-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .account-card {
+    min-height: 132px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .intro-card {
+    font-size: 0.96rem;
+    line-height: 1.8;
+  }
+
+  .footer {
+    gap: 18px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}
+
+@media (max-width: 420px) {
+  .page-shell {
+    width: min(100% - 14px, 100%);
+  }
+
+  .topbar--hero {
+    left: 10px;
+    right: 10px;
+    top: 10px;
+  }
+
+  .hero__content {
+    padding-top: 172px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.35rem, 13vw, 3.2rem);
+  }
+
+  .hero__lead {
+    line-height: 1.65;
+  }
+
+  .hero__tagline {
+    font-size: 0.98rem;
+    line-height: 1.75;
+  }
+
+  .language-switcher {
+    gap: 8px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .language-switcher__select {
+    max-width: none;
+  }
+
+  .account-grid {
+    grid-template-columns: 1fr;
   }
 }
 
