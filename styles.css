@@ -896,9 +896,12 @@ a {
   }
 
   .topbar--hero {
-    left: 14px;
-    right: 14px;
-    top: 14px;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    margin: 0;
+    padding: 14px 14px 0;
     gap: 10px;
   }
 
@@ -951,9 +954,13 @@ a {
   }
 
   .hero__content {
+    display: flex;
+    flex-direction: column;
     justify-items: center;
+    align-items: stretch;
     gap: 28px;
-    padding-top: 166px;
+    min-height: 0;
+    padding-top: 24px;
     padding-bottom: 20px;
   }
 
@@ -1110,13 +1117,13 @@ a {
   }
 
   .topbar--hero {
-    left: 10px;
-    right: 10px;
-    top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
   }
 
   .hero__content {
-    padding-top: 172px;
+    padding-top: 20px;
   }
 
   .hero h1 {
