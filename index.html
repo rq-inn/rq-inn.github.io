@@ -3,25 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="80PopSLcO5vUmIh9BZhPP0-biCyDDCKmjeIUDS7PxMM" />
-  <meta name="theme-color" content="#081120">
+  <meta name="google-site-verification" content="80PopSLcO5vUmIh9BZhPP0-biCyDDCKmjeIUDS7PxMM">
+  <meta name="theme-color" content="#73c7df">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="RQ Inn">
   <link rel="canonical" href="https://rq-inn.com/">
-  <title id="page-title">GloranthaGIS | RQ Adventurers' Inn</title>
+  <title id="page-title">RQ Adventurers' Inn | RuneQuest 非公式ファンクラブ</title>
   <meta
     id="meta-description"
     name="description"
-    content="GloranthaGIS を中心に、RuneQuest をもっと遊べるようにするプロモーションと各種アプリ、プレイエイド、関連リンクをまとめたトップページです。"
+    content="RQ Adventurers' Inn のトップページです。RuneQuest のためのアプリ、プレイエイド、関連アカウント、QR 導線をまとめています。"
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
-    rel="stylesheet"
-  >
-  <link rel="preload" href="font/GloranthaCoreRunes1.5.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="images/pwa/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/pwa/favicon-16.png">
   <link rel="shortcut icon" href="images/pwa/favicon-32.png">
@@ -31,283 +27,188 @@
 </head>
 <body>
   <div class="page-shell">
-    <header class="hero">
-      <div class="hero__stars" aria-hidden="true"></div>
-      <div class="hero__nebula hero__nebula--one" aria-hidden="true"></div>
-      <div class="hero__nebula hero__nebula--two" aria-hidden="true"></div>
-      <div class="hero__overlay"></div>
-      <div class="topbar topbar--hero">
-        <button id="rune-slot" class="rune-slot" type="button" aria-label="Spin rune slot">
-          <span class="rune-slot__inner">
-            <span class="rune-slot__reel" data-slot-reel>?</span>
-            <span class="rune-slot__reel" data-slot-reel>?</span>
-            <span class="rune-slot__reel" data-slot-reel>?</span>
-          </span>
-        </button>
-        <div id="language-switcher-host-top" class="language-switcher-host">
-          <div id="language-switcher" class="language-switcher">
-            <label class="language-switcher__label" for="language-select" data-i18n="languageLabel">Language</label>
-            <select id="language-select" class="language-switcher__select" aria-label="Language selector">
-              <option value="ja">日本語</option>
-              <option value="zh-Hant">繁體中文</option>
-              <option value="en">English</option>
-            </select>
-          </div>
+    <header class="hero section-fade">
+      <div class="hero__backdrop" aria-hidden="true"></div>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="topbar">
+        <a class="brand-mini" href="#top">RQ Adventurers' Inn</a>
+        <div class="language-switcher">
+          <label class="language-switcher__label" for="language-select" data-i18n="languageLabel">Language</label>
+          <select id="language-select" class="language-switcher__select" aria-label="Language selector">
+            <option value="ja">日本語</option>
+            <option value="zh-Hant">繁體中文</option>
+            <option value="en">English</option>
+          </select>
         </div>
       </div>
-      <div class="hero__content">
-        <div class="hero__media">
-          <div class="hero__icon-orbit">
-            <span class="hero__orbit hero__orbit--outer" aria-hidden="true"></span>
-            <span class="hero__orbit hero__orbit--inner" aria-hidden="true"></span>
-            <img class="hero__icon" src="images/apps/GloranthaGIS-icon-512.png" alt="GloranthaGIS Icon" data-i18n-attr="alt:gloranthaIconAlt">
-          </div>
-          <div class="hero__signal">
-            <p class="hero__signal-label" data-i18n="heroSignalLabel">Featured App</p>
-            <h2 data-i18n="heroSignalTitle">GloranthaGIS</h2>
-            <p data-i18n="heroSignalText">A map interface for bringing distance, travel, and place into play.</p>
-          </div>
+
+      <div id="top" class="hero__content">
+        <div class="hero__visual">
+          <img class="hero__logo" src="images/rq-inn-logo.png" alt="RQ Adventurers' Inn ロゴ" data-i18n-attr="alt:heroLogoAlt">
         </div>
-        <div class="hero__copy hero__copy--promo">
-          <p class="eyebrow" data-i18n="heroEyebrow">Cosmic Promotion</p>
-          <h1 data-i18n="heroTitle">GloranthaGIS</h1>
-          <p class="hero__lead" data-i18n="heroLead">Maps are not just for looking at. They are for play.</p>
-          <p class="hero__tagline" data-i18n="heroTagline">Measure distance. Know the land. Make every session feel real.</p>
-          <p class="hero__text" data-i18n="heroText1">
-            Dragon Pass and Prax stop being distant artwork and become a stage you can navigate, compare, and use during actual sessions.
-          </p>
-          <p class="hero__text" data-i18n="heroText2">Start with the promo, watch the demo, then continue down into the usual Adventurers' Inn.</p>
+        <div class="hero__copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">RuneQuest Fan Club</p>
+          <h1 data-i18n="heroTitle">RQ Adventurers' Inn</h1>
+          <p class="hero__lead" data-i18n="heroLead">RuneQuest 非公式ファンクラブ、RQ冒険者の宿へようこそ。</p>
+          <p class="hero__text" data-i18n="heroText1">ここは RuneQuest ファン もぶ（Mobu）が運営するサイトです。</p>
+          <p class="hero__text" data-i18n="heroText2">「もっと便利に、もっと楽しく、みんなで遊ぶ」をテーマに、さまざまな試みで RuneQuest を盛り上げていきます。</p>
+          <p class="hero__tagline" data-i18n="heroTagline">どうぞ、笑いと愛でゆる〜くお付き合いください。それでは、ごゆっくり… ☕</p>
           <div class="hero__actions">
-            <a href="/g-gis/" class="button button--primary" data-i18n="heroPrimaryAction">Open App</a>
-            <a href="#glorantha-demo" class="button button--secondary" data-i18n="heroSecondaryAction">Watch Demo</a>
-            <a href="#inn-intro" class="button button--ghost" data-i18n="heroTertiaryAction">Enter the Inn</a>
+            <a href="#applications" class="button button--primary" data-i18n="heroPrimaryAction">アプリを見る</a>
+            <a href="#accounts" class="button button--secondary" data-i18n="heroSecondaryAction">関連アカウントへ</a>
+            <a href="qr.html" class="button button--ghost" data-i18n="heroTertiaryAction">QRを表示</a>
           </div>
-          <div class="hero__links">
-            <a href="https://note.com/mofumofu1011/n/nb00fbd6ac9d5?app_launch=false" target="_blank" rel="noreferrer" data-i18n="heroJapaneseGuide">Japanese Guide</a>
-            <a href="https://note.com/mofumofu1011/n/nf05c11a7ed1a?app_launch=false" target="_blank" rel="noreferrer" data-i18n="heroEnglishGuide">English / Other Languages</a>
-          </div>
-        </div>
-      </div>
-      <div id="glorantha-demo" class="hero__video-wrap section-fade">
-        <div class="hero__video-copy">
-          <p class="section__label" data-i18n="promoVideoLabel">Demo Movie</p>
-          <h2 data-i18n="promoVideoTitle">See the world move before play begins.</h2>
-          <p data-i18n="promoVideoText">A quick video makes the core experience obvious before the visitor scrolls into the rest of the site.</p>
-        </div>
-        <div class="hero__video-frame">
-          <iframe
-            src="https://www.youtube.com/embed/WQ8gYwdzwUY"
-            title="GloranthaGIS Demo"
-            data-i18n-attr="title:promoVideoFrameTitle"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-          </iframe>
         </div>
       </div>
     </header>
 
     <main class="content">
-      <section class="promo-band section-fade">
-        <div class="section__heading section__heading--stack">
-          <p class="section__label" data-i18n="featuresLabel">What You Can Do</p>
-          <h2 data-i18n="featuresTitle">Use maps as a play surface, not just a picture.</h2>
-          <p data-i18n="featuresLead">GloranthaGIS turns geography into something the whole table can read and act on.</p>
-        </div>
-        <div class="promo-grid">
-          <article class="promo-card">
-            <h3 data-i18n="feature1Title">Place Jump</h3>
-            <p data-i18n="feature1Text">Search place names in Japanese or English and jump straight to the location.</p>
-          </article>
-          <article class="promo-card">
-            <h3 data-i18n="feature2Title">Distance Measurement</h3>
-            <p data-i18n="feature2Text">Draw routes on the map and see how far journeys really are.</p>
-          </article>
-          <article class="promo-card">
-            <h3 data-i18n="feature3Title">Range Circle</h3>
-            <p data-i18n="feature3Text">Visualize travel range, territory, and effect areas with radius tools.</p>
-          </article>
-          <article class="promo-card">
-            <h3 data-i18n="feature4Title">Layer View</h3>
-            <p data-i18n="feature4Text">Load PNG maps and inspect the world with zoom, drag, and layered viewing.</p>
-          </article>
-          <article class="promo-card">
-            <h3 data-i18n="feature5Title">Distance Origin Flag</h3>
-            <p data-i18n="feature5Text">Set a blue reference flag and read north/east offsets from the screen center.</p>
-          </article>
-          <article class="promo-card">
-            <h3 data-i18n="feature6Title">Built For Play</h3>
-            <p data-i18n="feature6Text">Use it during sessions to make movement, geography, and travel feel concrete.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="promo-band promo-band--alt section-fade">
-        <div class="section__heading section__heading--stack">
-          <p class="section__label" data-i18n="howtoLabel">How to Start</p>
-          <h2 data-i18n="howtoTitle">Get running in three steps.</h2>
-          <p data-i18n="howtoLead">The first experience should feel obvious, not technical.</p>
-        </div>
-        <div class="steps">
-          <article class="step">
-            <div class="step-number">1</div>
-            <h3 data-i18n="step1Title">Get the Map</h3>
-            <p data-i18n="step1Text">Prepare the high-resolution Dragon Pass or Prax map you want to explore.</p>
-          </article>
-          <article class="step">
-            <div class="step-number">2</div>
-            <h3 data-i18n="step2Title">Load PNG</h3>
-            <p data-i18n="step2Text">Open GloranthaGIS and load the PNG file from the app interface.</p>
-          </article>
-          <article class="step">
-            <div class="step-number">3</div>
-            <h3 data-i18n="step3Title">Explore And Play</h3>
-            <p data-i18n="step3Text">Zoom, measure, compare routes, and use the map during live sessions.</p>
-          </article>
-        </div>
-        <div class="howto-links">
-          <a href="https://note.com/mofumofu1011/n/nb00fbd6ac9d5?app_launch=false" target="_blank" rel="noreferrer" data-i18n="howtoGuideJa">Full Guide (JP)</a>
-          <a href="https://note.com/mofumofu1011/n/nf05c11a7ed1a?app_launch=false" target="_blank" rel="noreferrer" data-i18n="howtoGuideEn">Full Guide (EN)</a>
-        </div>
-      </section>
-
-      <section class="promo-band section-fade">
-        <div class="section__heading section__heading--stack">
-          <p class="section__label" data-i18n="useCasesLabel">Use Cases</p>
-          <h2 data-i18n="useCasesTitle">Show why it matters at the table.</h2>
-          <p data-i18n="useCasesLead">These scenes help visitors imagine the tool inside real play, not just on a feature list.</p>
-        </div>
-        <div class="promo-grid promo-grid--usecases">
-          <article class="promo-card promo-card--story">
-            <h3 data-i18n="useCase1Title">Travel Planning</h3>
-            <p data-i18n="useCase1Text">Let players see where they are, where they are headed, and what the trip really means.</p>
-          </article>
-          <article class="promo-card promo-card--story">
-            <h3 data-i18n="useCase2Title">Route Decisions</h3>
-            <p data-i18n="useCase2Text">Compare roads, rivers, mountains, and distance with one shared visual reference.</p>
-          </article>
-          <article class="promo-card promo-card--story">
-            <h3 data-i18n="useCase3Title">Range And Area</h3>
-            <p data-i18n="useCase3Text">Understand territory, danger zones, and movement scale with circles and measurements.</p>
-          </article>
-          <article class="promo-card promo-card--story">
-            <h3 data-i18n="useCase4Title">Session Immersion</h3>
-            <p data-i18n="useCase4Text">The map stops being background art and becomes part of the conversation itself.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="inn-intro" class="intro-card section-fade">
+      <section class="intro-card section-fade">
         <p data-i18n="introText">
-          RuneQuest を遊ぶ時間が少しでも楽しく、少しでも便利になるように。
-          このページでは、配布中のツール、プレイに役立つ資料、発信中の各種アカウントをまとめています。
+          RuneQuest を遊ぶ時間が、少しでも便利に、少しでも楽しくなるように。配布中のアプリ、プレイエイド、各種発信先をこのページにまとめています。
         </p>
+      </section>
+
+      <section class="section section-fade">
+        <div class="section__heading">
+          <div>
+            <p class="section__label" data-i18n="informationLabel">Information</p>
+            <h2 data-i18n="informationTitle">ご案内</h2>
+          </div>
+          <p class="section__lead" data-i18n="informationLead">RuneQuest 関連の追加案内ページです。</p>
+        </div>
+        <a class="link-panel" href="https://www.rq-inn.com/info-gis" target="_blank" rel="noreferrer">
+          <img class="link-panel__image" src="images/apps/GloranthaGIS-icon-512.png" alt="GloranthaGIS アイコン" data-i18n-attr="alt:gloranthaGisInfoAlt">
+          <div>
+            <p class="link-panel__tag">GloranthaGIS</p>
+            <h3 data-i18n="informationCardTitle">GloranthaGIS</h3>
+            <p data-i18n="informationCardDescription">GloranthaGIS のご案内ページはこちらからご覧いただけます。</p>
+          </div>
+          <span class="link-panel__arrow" aria-hidden="true">↗</span>
+        </a>
+      </section>
+
+      <section class="section section-fade">
+        <div class="section__heading">
+          <div>
+            <p class="section__label" data-i18n="playAidLabel">Play Aid</p>
+            <h2 data-i18n="playAidTitle">プレイエイド</h2>
+          </div>
+          <p class="section__lead" data-i18n="playAidLead">卓でそのまま役立つ資料もまとめています。</p>
+        </div>
+        <a class="link-panel" href="https://www.drivethrurpg.com/ja/product/557305/japanese?src=hottest_filtered" target="_blank" rel="noreferrer">
+          <img class="link-panel__image" src="images/calendar.png" alt="グローランサ カレンダー 日本語版の表紙" data-i18n-attr="alt:calendarImageAlt">
+          <div>
+            <p class="link-panel__tag" data-i18n="calendarTag">Calendar</p>
+            <h3 data-i18n="calendarTitle">グローランサ カレンダー（日本語版）</h3>
+            <p data-i18n="calendarDescription">RuneQuest の 21カルトの聖日が分かる 6季カレンダー 日本語版 へのリンクです。</p>
+          </div>
+          <span class="link-panel__arrow" aria-hidden="true">↗</span>
+        </a>
       </section>
 
       <section id="applications" class="section section-fade">
         <div class="section__heading">
-          <p class="section__label" data-i18n="applicationsLabel">Applications</p>
-          <h2 data-i18n="applicationsTitle">アプリ</h2>
+          <div>
+            <p class="section__label" data-i18n="applicationsLabel">Applications</p>
+            <h2 data-i18n="applicationsTitle">アプリ</h2>
+          </div>
+          <p class="section__lead" data-i18n="applicationsLead">RuneQuest をもっと便利に楽しむためのツールです。</p>
         </div>
         <div class="feature-list">
-          <a class="feature-card feature-card--link" href="https://rq-inn.com/pdf-tools/" target="_blank" rel="noreferrer">
+          <a class="feature-card" href="https://www.rq-inn.com/info-gis" target="_blank" rel="noreferrer">
             <div class="feature-card__icon-wrap">
-              <img src="images/apps/pdf_tools_icon-512.png" alt="PDFつーる アイコン" class="feature-card__icon" data-i18n-attr="alt:pdfToolsIconAlt">
+              <img src="images/apps/GloranthaGIS-icon-512.png" alt="GloranthaGIS アイコン" class="feature-card__icon" data-i18n-attr="alt:gloranthaGisInfoAlt">
+            </div>
+            <div class="feature-card__body">
+              <p class="link-panel__tag">GloranthaGIS</p>
+              <h3 data-i18n="gloranthaGisAppTitle">GloranthaGIS</h3>
+              <p data-i18n="gloranthaGisAppDescription">GloranthaGIS のご案内ページへ進めます。</p>
+            </div>
+            <span class="feature-card__arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="feature-card" href="https://rq-inn.com/pdf-tools/" target="_blank" rel="noreferrer">
+            <div class="feature-card__icon-wrap">
+              <img src="images/pdf_tools_icon-512.png" alt="PDFつーる アイコン" class="feature-card__icon" data-i18n-attr="alt:pdfToolsIconAlt">
             </div>
             <div class="feature-card__body">
               <p class="link-panel__tag" data-i18n="pdfToolsTag">PDF Tools</p>
               <h3 data-i18n="pdfToolsTitle">PDFつーる</h3>
-              <p data-i18n="pdfToolsDescription">ルーンクエストのためのPDFお役立ちツールです。ルールブックの印刷や お手軽翻訳を、少し気軽にするためのアプリをまとめました。※スマートフォン未対応</p>
+              <p data-i18n="pdfToolsDescription">ルーンクエストのためのお役立ちツールです。</p>
             </div>
             <span class="feature-card__arrow" aria-hidden="true">↗</span>
           </a>
-          <a class="feature-card feature-card--link" href="https://rq-inn.com/png-maker/" target="_blank" rel="noreferrer">
+
+          <a class="feature-card" href="https://rq-inn.com/png-maker/" target="_blank" rel="noreferrer">
             <div class="feature-card__icon-wrap">
-              <img src="images/apps/png-maker-icon-512.png" alt="透過PNGメーカー アイコン" class="feature-card__icon" data-i18n-attr="alt:pngMakerIconAlt">
+              <img src="images/png-maker-icon-512.png" alt="透過PNGメーカー アイコン" class="feature-card__icon" data-i18n-attr="alt:pngMakerIconAlt">
             </div>
             <div class="feature-card__body">
               <p class="link-panel__tag" data-i18n="pngMakerTag">PNG Maker</p>
               <h3 data-i18n="pngMakerTitle">透過PNGメーカー</h3>
-              <p data-i18n="pngMakerDescription">AI生成画像などの切り出しツールです。オンセの準備などに役立てて下さい。※スマートフォン未対応</p>
+              <p data-i18n="pngMakerDescription">AI生成画像などの切り出しツールです。オンセの準備などに役立てて下さい。</p>
             </div>
             <span class="feature-card__arrow" aria-hidden="true">↗</span>
           </a>
-          <a class="feature-card feature-card--link" href="https://rq-inn.com/mirr-dict/" target="_blank" rel="noreferrer">
+
+          <a class="feature-card" href="https://rq-inn.com/mirr-dict/" target="_blank" rel="noreferrer">
             <div class="feature-card__icon-wrap">
               <img src="images/apps/MD-icon-512.png" alt="ミルディクト アイコン" class="feature-card__icon" data-i18n-attr="alt:mirrDictIconAlt">
             </div>
             <div class="feature-card__body">
               <p class="link-panel__tag" data-i18n="mirrDictTag">Mirr Dict</p>
               <h3 data-i18n="mirrDictTitle">ミルディクト</h3>
-              <p data-i18n="mirrDictDescription">原書と日本語訳の2つのPDFを並べて、サクサク辞書を作れるツールです。※スマートフォン未対応</p>
+              <p data-i18n="mirrDictDescription">原書と日本語訳の2つのPDFを並べて、サクサク辞書を作れるツールです。</p>
             </div>
             <span class="feature-card__arrow" aria-hidden="true">↗</span>
           </a>
         </div>
       </section>
 
-      <section class="section section-fade">
-        <div class="section__heading">
-          <p class="section__label" data-i18n="playAidLabel">Play Aid</p>
-          <h2 data-i18n="playAidTitle">プレイエイド</h2>
-        </div>
-        <a
-          class="link-panel"
-          href="https://www.drivethrurpg.com/ja/product/557305/japanese?src=hottest_filtered"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img class="link-panel__image" src="images/play-aids/calendar.png" alt="グローランサ カレンダー 日本語版の表紙" data-i18n-attr="alt:calendarImageAlt">
-          <div>
-            <p class="link-panel__tag" data-i18n="calendarTag">Calendar</p>
-            <h3 data-i18n="calendarTitle">グローランサ カレンダー（日本語版）</h3>
-            <p data-i18n="calendarDescription">RuneQuest の 21カルトの聖日が分かる　6季カレンダー 日本語版 へのリンクです。</p>
-          </div>
-          <span class="link-panel__arrow" aria-hidden="true">↗</span>
-        </a>
-      </section>
-
       <section id="accounts" class="section section-fade">
         <div class="section__heading">
-          <p class="section__label" data-i18n="accountsLabel">Related Accounts</p>
-          <h2 data-i18n="accountsTitle">関連アカウント</h2>
+          <div>
+            <p class="section__label" data-i18n="accountsLabel">Related Accounts</p>
+            <h2 data-i18n="accountsTitle">関連アカウント</h2>
+          </div>
+          <p class="section__lead" data-i18n="accountsLead">更新情報や読み物、動画はここからどうぞ。</p>
         </div>
         <div class="account-grid">
           <a class="account-card" href="https://note.com/mofumofu1011" target="_blank" rel="noreferrer">
             <span class="account-card__emoji">🪶</span>
             <h3>note</h3>
-            <p data-i18n="accountNoteDescription">ブログと読み物</p>
+            <p data-i18n="accountNoteDescription">ブログ</p>
           </a>
           <a class="account-card" href="https://x.com/RQ_Inn_Official" target="_blank" rel="noreferrer">
             <span class="account-card__emoji">😁</span>
             <h3 data-i18n="accountMainXTitle">X メイン</h3>
-            <p data-i18n="accountMainXDescription">最新のお知らせ</p>
+            <p data-i18n="accountMainXDescription">お知らせ</p>
           </a>
           <a class="account-card" href="https://x.com/RQ_Inn_Intl" target="_blank" rel="noreferrer">
             <span class="account-card__emoji">🌎</span>
             <h3 data-i18n="accountIntlXTitle">X 海外</h3>
-            <p data-i18n="accountIntlXDescription">英語圏向けの発信</p>
+            <p data-i18n="accountIntlXDescription">英語圏向け</p>
           </a>
           <a class="account-card" href="https://x.com/RQ_Inn_GrChina" target="_blank" rel="noreferrer">
             <span class="account-card__emoji">🐉</span>
             <h3 data-i18n="accountChineseXTitle">X 中国語圏</h3>
-            <p data-i18n="accountChineseXDescription">中国語圏向けの発信</p>
+            <p data-i18n="accountChineseXDescription">中国語圏向け</p>
           </a>
           <a class="account-card" href="https://x.com/mofumofu1011" target="_blank" rel="noreferrer">
             <span class="account-card__emoji">☕</span>
             <h3 data-i18n="accountPersonalXTitle">X 個人</h3>
-            <p data-i18n="accountPersonalXDescription">もぶ個人アカウント</p>
+            <p data-i18n="accountPersonalXDescription">もぶ</p>
           </a>
           <a class="account-card" href="https://www.facebook.com/mobu.rq.adventurers.inn/" target="_blank" rel="noreferrer">
             <span class="account-card__emoji">🎩</span>
             <h3>Facebook</h3>
-            <p data-i18n="accountFacebookDescription">コミュニティの記録</p>
+            <p data-i18n="accountFacebookDescription">コミュニティ</p>
           </a>
           <a class="account-card" href="https://www.youtube.com/channel/UCVH7YpSoC4GMN1ayZ3m5yZA" target="_blank" rel="noreferrer">
             <span class="account-card__emoji">📺</span>
             <h3>YouTube</h3>
-            <p data-i18n="accountYoutubeDescription">動画コンテンツ</p>
+            <p data-i18n="accountYoutubeDescription">動画</p>
           </a>
           <a class="account-card" href="https://www.tiktok.com/@rq_adventurers_inn" target="_blank" rel="noreferrer">
             <span class="account-card__emoji">🕺</span>
@@ -317,22 +218,28 @@
           <a class="account-card" href="https://www.instagram.com/rq_adventurers_inn" target="_blank" rel="noreferrer">
             <span class="account-card__emoji">📷</span>
             <h3>Instagram</h3>
-            <p data-i18n="accountInstagramDescription">ビジュアル更新</p>
+            <p data-i18n="accountInstagramDescription">画像投稿</p>
           </a>
         </div>
+      </section>
+
+      <section class="qr-callout section-fade">
+        <div>
+          <p class="section__label" data-i18n="qrLabel">Quick Access</p>
+          <h2 data-i18n="qrTitle">QR を表示する</h2>
+          <p data-i18n="qrDescription">スマートフォンから開きたいときのために、QR コードだけを大きく表示する専用画面を用意しました。</p>
+        </div>
+        <a class="button button--primary" href="qr.html" data-i18n="qrAction">QR画面を開く</a>
       </section>
     </main>
 
     <footer class="footer section-fade">
       <div class="footer__copy">
-        <p class="section__label" data-i18n="footerLabel">Adventurers' Desk</p>
-        <h2 data-i18n="footerTitle">ゆっくり見ていってください</h2>
-        <p data-i18n="footerDescription">スマートフォンからもアクセスしやすいように、トップページをシンプルに整理しています。</p>
+        <p class="section__label" data-i18n="footerLabel">Company</p>
+        <h2 class="footer__title" data-i18n="footerTitle">会社概要もご案内しています</h2>
+        <p data-i18n="footerDescription">サイト案内とあわせて、運営情報の確認が必要な方はこちらからどうぞ。</p>
+        <a class="footer__link" href="https://rq-inn.com/company" target="_blank" rel="noreferrer" data-i18n="footerLink">会社概要を見る</a>
         <p class="footer__small">© <span id="current-year"></span> RQ Adventurers' Inn</p>
-      </div>
-      <div class="footer__qr">
-        <img src="images/branding/rq-inn-com-qr.png" alt="RQ Adventurers' Inn サイトQRコード" data-i18n-attr="alt:qrAlt">
-        <p data-i18n="qrText">QR からもアクセスできます。</p>
       </div>
     </footer>
   </div>

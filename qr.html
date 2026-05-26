@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RQ Adventurers' Inn | QR</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: "Noto Sans JP", sans-serif;
+      color: #f7fdff;
+      background:
+        radial-gradient(circle at top, rgba(191, 239, 252, 0.26), transparent 26%),
+        linear-gradient(180deg, #8fd7eb 0%, #3d90b6 100%);
+    }
+
+    main {
+      width: min(100%, 720px);
+      padding: 28px;
+      border-radius: 28px;
+      text-align: center;
+      background: rgba(16, 69, 96, 0.8);
+      box-shadow: 0 24px 54px rgba(15, 70, 97, 0.26);
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      font-family: "Cinzel", serif;
+      letter-spacing: 0.05em;
+    }
+
+    p {
+      margin: 0 0 22px;
+      line-height: 1.8;
+      color: rgba(244, 252, 255, 0.92);
+    }
+
+    img {
+      display: block;
+      width: min(100%, 420px);
+      margin: 0 auto 24px;
+      padding: 16px;
+      border-radius: 24px;
+      background: #fffefe;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 20px;
+      border-radius: 999px;
+      color: #f7fdff;
+      text-decoration: none;
+      background: linear-gradient(135deg, #4cc5e5 0%, #257cae 100%);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>RQ Adventurers' Inn</h1>
+    <p>スマートフォンで開くための QR コードです。</p>
+    <img src="images/rq-inn-com-qr.png" alt="RQ Adventurers' Inn QRコード">
+    <a href="./index.html">トップページへ戻る</a>
+  </main>
+</body>
+</html>
